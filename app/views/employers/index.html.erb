@@ -1,0 +1,18 @@
+<h1>User Activity</h1>
+
+<ul>
+	<% @employers.each do |e| %>
+		<li> 
+		 Income	<%= e.income  %> 
+		 Pay Period	<%= e.pay_period %> 
+		 Health Insurance? <%= e.health_insurance %> 
+		 Benefits?  <%= e.benefits %> 
+		</li>	
+
+		<%= link_to "More details!", employer_path(e) %> 
+     <% end %>
+	</ul>
+
+ 
+
+

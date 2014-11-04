@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pay_period: 2014-10-30
+  income: 9.99
+  health_insurance: false
+  401K: false
+
+two:
+  pay_period: 2014-10-30
+  income: 9.99
+  health_insurance: false
+  401K: false
