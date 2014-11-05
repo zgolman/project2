@@ -4,7 +4,7 @@ root 'home#index'
 
 get 'employers/' => 'employers#index', as: :employers
 
-get 'employers/new' => 'employers#new'
+get 'employers/new' => 'employers#new', as: :new
  
 post 'employers/' => 'employers#create'
 

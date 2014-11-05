@@ -1,18 +1,42 @@
-<h1>User Activity</h1>
+<div class="container">
+	<div class="row">
+		<div id="top">
+		  <div class="col-md-12">
+		  	<h1 class="user">Welcome USERNAME!</h1>
+		  		<div class="link">
+		  		<%= link_to "Add New Paystub", new_path %> 
+		  		</div>
+		  </div>
+		</div>
+	</div>
 
-<ul>
-	<% @employers.each do |e| %>
-		<li> 
-		 Income	<%= e.income  %> 
-		 Pay Period	<%= e.pay_period %> 
-		 Health Insurance? <%= e.health_insurance %> 
-		 Benefits?  <%= e.benefits %> 
-		</li>	
+	<div class="row"> 
+		<div id="content">
+		  <div class="col-md-12">
+			<h1 class="user2">Benefit's History</h1>
+			<ul>
+			<% @employers.each do |e| %>
+			<li> 
+			 Income	<%= e.income  %> 
+			 Pay Period	<%= e.pay_period %> 
+			 Health Insurance? <%= e.health_insurance %> 
+			 Benefits?  <%= e.benefits %> 
+			</li
+			<%= link_to "More details!", employer_path(e) %> 
+	    	 <% end %>
+			</ul>
+		  </div>
+		</div>
+	</div>
+</div>
 
-		<%= link_to "More details!", employer_path(e) %> 
-     <% end %>
-	</ul>
 
- 
+
+
+
+
+
+
+
 
 
