@@ -1,5 +1,5 @@
 class EmployersController < ApplicationController
-
+skip_before_filter :authorize
   def index
     @employers = Employer.all
   end
